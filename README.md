@@ -10,4 +10,4 @@
 ![](/plots/word_count_cloud.png)
 
 
-![](/plots/svd_cloud.png)
+![](/plots/svd_word_cloud_screen.png)
