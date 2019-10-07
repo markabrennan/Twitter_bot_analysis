@@ -26,15 +26,9 @@ Final dataset contains ~240,000 observations (tweets)
 
 ## Understanding Our Data
 
-The word cloud and bar graph below will highlight the most occurring key words amongst both classes.
+The bar graphs below will highlight the most occurring key words amongst both classes as well as show that our classes are balanced.
 
 ![](/plots/tweeted_word_counts.png)
-
-
-![](/plots/word_count_cloud.png)
-
-As you can see below our classes are balanced.
-
 ![](/plots/class_count.png) 
 
 ## Our Model
@@ -52,6 +46,11 @@ But prediction using our RandomForest model fitted with our reduced feature dime
 
 ## Feature Importance
 Not surprinsgly, given the subjects/categories used for capturing verified (non-bot) tweets, and illustrated in the pictures below, certain “hot-button” words/topics are prominent in their importance in driving model performance, but other words, such as “man”, “woman”, “trump”, “new”, “year”, are also important in their impact on the model’s latent semantic analysis.
+
+![](/plots/svd_features.png)
+![](/plots/tf_idf_feature_counts.png)
+
+
 ## Takeaways
 The model performed exceptionally well with reduced dimension word vectors and shed light on words that helped drive its latent semantic analysis.
 ## Future Consideration
