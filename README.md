@@ -2,7 +2,7 @@
 
 **Authors:** Nabil Abbas & Mark Brennan
 
-*“In line with our principles of transparency and to improve public understanding of alleged foreign influence campaigns, **Twitter is making publicly available archives of Tweets and media that we believe resulted from potentially state-backed information operations on our service.**”*
+*“In line with our principles of transparency and to improve public understanding of alleged foreign influence campaigns, **Twitter is making publicly available archives of Tweets and media that we believe resulted from potentially state-backed information operations on our service.**”*   - Twitter (Stated approach on election integrity)
 
 ## Goals
 
@@ -11,6 +11,16 @@ Using a publically available dataset provided by Twitter, create a Classificatio
 The datset includes: *"all public, nondeleted Tweets and media (e.g., images and videos) from accounts Twitter believes are connected to state-backed information operations."*
 
 Once the model has been created, identify key terminology that may differentiate between bot and humans.
+
+## Tech Stack
+- Python
+- SpaCy
+- NLTK
+- Scikit-Learn
+- Twint
+- Matplotlib
+- Pandas
+
 
 ## Strategy
 
