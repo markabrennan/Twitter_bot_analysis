@@ -26,7 +26,13 @@ Final dataset contains ~240,000 observations (tweets)
 
 ## Understanding Our Data
 
+The word cloud and bar graph below will highlight the most occurring key words amongst both classes.
+
 ![](/plots/word_count_cloud.png)
+
+As you can see below our classes are balanced.
+
+![](/plots/class_count.png) 
 
 ## Our Model
 Following a train, test split, we vectorized our tweets, using both Scikit-Learn’s Count Vectorizer and TF-IDF Vectorizer.  This yielded 19K+ features, so we subsequently reduced our dimensionally using singular value decomposition (SVD) techniques through Scikit-Learn’s TruncatedSVD class, reducing our dimensions to 100.
