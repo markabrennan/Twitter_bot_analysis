@@ -28,6 +28,9 @@ Final dataset contains ~240,000 observations (tweets)
 
 The word cloud and bar graph below will highlight the most occurring key words amongst both classes.
 
+![](/plots/tweeted_word_counts.png)
+
+
 ![](/plots/word_count_cloud.png)
 
 As you can see below our classes are balanced.
@@ -39,8 +42,14 @@ Following a train, test split, we vectorized our tweets, using both Scikit-Learn
 We fit Scikit-Learn’s  multinomial naive bayes model with our TF-IDF vectorized data, but subsequently focused on modeling our reduced dimensions with Scikit-Learn’s DecisionTree and RandomForest estimators.
 ## Model Performance
 A baseline “dummy” model yielded precision, recall, accuracy and F1 of .47-.50, which is to be expected given our evenly distributed classes.
+
 The multinomial naive bayes model with our TF-IDF vectorized data yielded a precision score of .91, a recall score of .78, an accuracy score of .86, and an F1 score of .84.
+
 But prediction using our RandomForest model fitted with our reduced feature dimensions yielded staggeringly good results, with a precision score of .96, a recall score of .93, an accuracy score of .94, and an F1 score of .94.
+
+![](/plots/RF_Confusion.png)
+![](/plots/ROC_RF.png)
+
 ## Feature Importance
 Not surprinsgly, given the subjects/categories used for capturing verified (non-bot) tweets, and illustrated in the pictures below, certain “hot-button” words/topics are prominent in their importance in driving model performance, but other words, such as “man”, “woman”, “trump”, “new”, “year”, are also important in their impact on the model’s latent semantic analysis.
 ## Takeaways
